@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import CardComponent from "./Card/Card";
-
+import{Typography, Grid} from '@material-ui/core'
 import styles from "./Card.module.css";
 
 const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
@@ -10,6 +10,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   }
   return (
     <div className={styles.container}>
+    <Typography gutterBottom variant="h4" component="h2">Global</Typography>
       <Grid container spacing={3} justify="center">
         <CardComponent
           className={styles.infected}

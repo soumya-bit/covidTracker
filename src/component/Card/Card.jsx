@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
 import CardComponent from "./Card/Card";
 import{Typography, Grid} from '@material-ui/core'
 import styles from "./Card.module.css";

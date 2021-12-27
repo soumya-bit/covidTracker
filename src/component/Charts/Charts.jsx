@@ -50,10 +50,14 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
           {
             data: dailyData.map(data => data.confirmed),
             label: "Infected",
-            @@ -55,6 +55, 12 @@ const Chart =({data: {confirmed, recovered, deaths}, country})=>{
+            borderColor:'#3333ff'
+            fill:true,
+          }, {
+            Data:dailyData.map((data)=>data.deaths),
+            label:'Deaths',
             borderColor: "red",
               backgroundColor: 'rgba(255,0,0,0.5)',
-            fill: true
+            fill: true,
           },
           {
             data: dailyData.map(data => data.recovered),
